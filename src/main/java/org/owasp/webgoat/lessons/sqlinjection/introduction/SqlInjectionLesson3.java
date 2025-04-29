@@ -20,6 +20,7 @@
  * Source for this application is maintained at https://github.com/WebGoat/WebGoat, a repository for free software projects.
  */
 
+ 
 package org.owasp.webgoat.lessons.sqlinjection.introduction;
 
 import static java.sql.ResultSet.CONCUR_READ_ONLY;
@@ -55,6 +56,7 @@ public class SqlInjectionLesson3 extends AssignmentEndpoint {
   }
 
   protected AttackResult injectableQuery(String query) {
+    
     try (Connection connection = dataSource.getConnection()) {
       try (Statement statement =
           connection.createStatement(TYPE_SCROLL_INSENSITIVE, CONCUR_READ_ONLY)) {
