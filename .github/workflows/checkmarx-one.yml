@@ -1,4 +1,4 @@
-name: Checkmarx Scan with Tags
+name: Checkmarx Scan
 
 on:
   push:
